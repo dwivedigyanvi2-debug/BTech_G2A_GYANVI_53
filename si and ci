@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<math.h>
+    int main(){
+    int rate,principal,tym;
+    printf("Enter the principal amount - ");
+    scanf("%d",&principal);
+    printf("\nEnter the rate - ");
+    scanf("%d",&rate);
+    printf("\nEnter the time - ");
+    scanf("%d",&tym);
+    
+    int SI;
+    double CI;
+    SI = (principal*rate*tym)/100;
+    printf("\nThe simple intesrest is %d",SI);
+    CI = principal * pow(1+(rate/100.0),tym);
+    double amount = CI-principal;
+    printf("\nThe compound interest is %.2f",amount);
+    
+
+    return 0;
+}
